@@ -56,8 +56,20 @@ body {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);;
 }
 
-.nav-logo {
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-name {
     color: #4756df;
+    font-size: 32px
+}
+
+.nav-logo {
+    width: 10%;
+    height: 10%
 }
 
 .link-group {

@@ -21,22 +21,26 @@
             <h1 class="nav-name">EDUPLAY</h1>
         </div>
         <ul class = "link-group">
-            <li class = "link active"><a href="#">Home</a></li>
-            <li class = "link"><a href="#">About</a></li>
-            <li class = "link"><a href="#">Games</a></li>
+            <li class = "link active"><a href="#home">Home</a></li>
+            <li class = "link"><a href="#about">About</a></li>
+            <li class = "link"><a href="#games">Games</a></li>
+            <li class = "link"><a href="#faqs">FAQs</a></li>
             <li class = "link"><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <!--HOME SECTION-->
-    <section class = "home-section">
-        <h1 class = "hero-heading">Welcome to EDUPLAY</h1>
-        <img src="images/background-1.png" class="home-image" alt="">
+    <section class = "home-section" id="home">
+        <div class = "heading-section">
+            <h1 class = "hero-heading">The learning platform <br> bringing games and education together.</h1>
+            <h2 class =" hero-sub-heading">Welcome to Eduplay! Using games to support student learning <br>throughout the world. Fun. Free. Forever.</h2>
+        </div>
+        <img src="images/main-logo.webp" class="home-image" alt="">
     </section>
 
 
     <!-- ABOUT SECTION -->
-    <h1 class="about-heading">About</h1> 
+    <h1 class="about-heading" id="about">About</h1> 
     <section class="about-section">
         <div class=about-cards>
                 <div class = "about-card">
@@ -61,7 +65,7 @@
 
 
     <!-- GAME SECTION -->
-    <section class="games-section active">
+    <section class="games-section active" id="games">
         <h1 class="games-heading">Games</h1>
         <div class="games-container">
                 
@@ -166,6 +170,56 @@
             
         </div>
     </section>
+
+    <!-- FAQ SECTION -->
+    <section class="FAQ-section" ID="faqs">
+        <h1>FAQs</h1>
+        <hr>
+        <div class="accordian-section">
+            
+            <!-- menu 1 -->
+            <input type="radio" name="trg1" id="acc1" checked="checked">
+            <label for="acc1">What is Eduplay?</label>
+            <div class="content">
+                <div class="inner">
+                    Eduplay is a project initially started by Yusuf Hassan. The intent is to produce a website which provides a number of educational games, which are both fun and supplemental to the user's education.
+                </div>
+            </div>
+          
+
+            <!-- menu 2 -->
+            <input type="radio" name="trg1" id="acc2">
+            <label for="acc2">Who is Eduplay targetted at?</label>
+            <div class="content">
+                <div class="inner">
+                    While Eduplay is created specifically for UK students in KS2 and KS3, I'm working to create games that are more vague, in order to appeal to the wider international community.
+                </div>
+            </div>
+
+            <!-- menu 3 -->
+            <input type="radio" name="trg1" id="acc3">
+            <label for="acc3">How much does Eduplay cost?</label>
+            <div class="content">
+                <div class="inner">
+                    It's completely free, and will always remain this way! As the home page says, "Fun. Free. Forever."
+                </div>
+            </div>
+            
+            <!-- menu 4 -->
+            <input type="radio" name="trg1" id="acc4">
+            <label for="acc4">Question 4</label>
+            <div class="content">
+                <div class="inner">
+                    It is a demo text.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Eduplay, created by Yusuf Hassan.</p>
+    </footer>
 
 
     <!--SCRIPT-->

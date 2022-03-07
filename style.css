@@ -11,9 +11,9 @@ html {
 
 
 body[data-theme = "light"] {
-    --background-color: #fcfcfc;
-    --navbar-color: rgb(0,0,0);
-    --navbar-text-color: #000;
+    --background-color: #F9FAF8;
+    --navbar-color: #fff;
+    --navbar-text-color: #E5E7EB;
     --text-color: #1a1a1a;
     --alt-text-color: #4756df;
     --primary-shadow: #8b8eaf;
@@ -21,7 +21,7 @@ body[data-theme = "light"] {
 }
 
 body[data-theme = "dark"] {
-    --background-color: #191919;
+    --background-color: #F9FAF8;
     --navbar-color: #1a1a1a;
     --navbar-text-color: #fff;
     --text-color: #fff;
@@ -34,8 +34,9 @@ body {
     display: block;
     /* width: 100%; */
     font-family: 'Roboto', sans-serif;
-    background: var(--background-color);
     user-select: none;
+    max-width: 100%;
+    background-color: #F9FAF8;
 }
 
 
@@ -50,8 +51,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--background-color);
-    padding: 1.5rem 3.5rem;
+    background: #1F2937 linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    padding: 0.5rem 3.5rem;
     opacity: 100%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);;
 }
@@ -64,12 +65,12 @@ body {
 
 .nav-name {
     color: #4756df;
-    font-size: 32px
+    font-size: 24px
 }
 
 .nav-logo {
-    width: 10%;
-    height: 10%
+    width: 5%;
+    height: 5%
 }
 
 .link-group {
@@ -79,7 +80,7 @@ body {
 
 .link a{
     color: var(--navbar-text-color);
-    opacity: 80%;
+    opacity: 60%;
     text-decoration: none;
     text-transform: capitalize;
     padding: 10px 30px;
@@ -91,43 +92,63 @@ body {
 
 .link.active, .link a:hover{
     opacity: 1;
+    color: #fff;
 }
 
 
 /* HOME SECTION */
 .home-section{
     margin: auto;
-    /* width:80%; */
     height: 100vh;
-    /* padding: 0 150px; */
-    /* display: flex;
-    align-items: center; */
     position: relative;
     opacity: 1;
     transition: 1s;
     margin-bottom: 50px;
-}
-
-.hero-heading {
-    color: var(--text-color);
-    font-size: 56px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);;
-    z-index: 2;
+    background: radial-gradient(#1F2937,#1F2937,#000);
+    display: flex;
+    justify-content: center;
+    gap: 2%
 }
 
 .home-image {
-    top: 0;
-    position: relative;
-    /* height: inherit; */
+    /* position: relative; */
+    z-index: 2;
+    border-radius: 25px;
+    width: 40%;
+    height: 40%;
     object-fit: fill;
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    /* opacity: 0.2; */
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    margin-top: 15%;
+    margin-right: 4%;
+
 }
+
+
+.heading-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-heading {
+    color: #E5E7EB;
+    font-size: 4rem;
+    position: relative;
+    margin: 00% 0% 0% 10%;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.hero-sub-heading {
+    position: relative;
+    z-index: 2;
+    font-weight: 100;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    color: #E5E7EB;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+}
+
 
 
 /* ABOUT SECTION */
@@ -139,6 +160,7 @@ body {
 }
 
 .about-cards {
+    background: var(--background-color);
     width: 60%;
     display:flex;
     flex-wrap: flex;
@@ -146,6 +168,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 25px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
@@ -162,7 +185,7 @@ body {
 
 .about-card {
     /* width: 60%; */
-    padding: 0px 30px 0px 0px;
+    padding: 10px 30px 10px 10px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -206,11 +229,13 @@ body {
 
 .games-container{
     display: flex;
+    background: var(--background-color);
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
     margin: -10px 0 0 0;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    border-radius: 25px;
 }
 
 
@@ -241,7 +266,7 @@ body {
 }
 
 .game-title {
-    font-size: 50px;
+    font-size: 3.125rem;
     text-transform: capitalize;
     text-align: center;
     font-weight: 300;
@@ -254,7 +279,7 @@ body {
     line-height: 30px;
     text-align: center;
     color: #fff;
-    z-index: 3;
+    z-index: 9;
 }
 
 .games-btn-grp {
@@ -296,4 +321,91 @@ body {
 
 .active {
     opacity: 1;
+}
+
+
+/* FAQ SECTION */
+
+.FAQ-section{
+    margin:auto;
+    text-align: left;
+    width: 800px;
+    padding-bottom: 50px;
+}
+.FAQ-section h1{
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.accordian-section {
+    width:800px;
+    margin: 0 auto;
+}
+
+.accordian-section input[type=radio]{
+    display: none;
+}
+
+.accordian-section label{
+    display: block;
+    height: 50px;
+    line-height: 47px;
+    padding: 0 10px 0 10px;
+    background: var(--background-color);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-color);
+    position: relative;
+    cursor: pointer;
+}
+
+.accordian-section label::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: transparent transparent transparent #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordian-section > .content {
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+}
+
+.accordian-section >.content > .inner{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    background: var(--background-color);
+    padding: 0 0px 0 10px;
+}
+
+.accordian-section input[type=radio]:checked + label:after{
+    transform: rotate(90deg)
+}
+
+.accordian-section input[type=radio]:checked + label + .content{
+    max-height: 2000px;
+    height: auto;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    font-weight: 900;
+    text-size-adjust: 2rem;
+    background: radial-gradient(#1F2937,#1F2937,#000);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.footer p{
+    color: var(--navbar-text-color);
 }

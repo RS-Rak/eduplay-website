@@ -1,0 +1,20 @@
+{
+  "name": "eduplay-website",
+  "version": "1.0.0",
+  "description": "\"Eduplay – An educational website to teach KS2&3 students English, Maths and Science via minigames.\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RS-Rak/eduplay-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RS-Rak/eduplay-website/issues"
+  },
+  "homepage": "https://github.com/RS-Rak/eduplay-website#readme"
+}

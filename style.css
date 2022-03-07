@@ -153,6 +153,10 @@ body {
 
 /* ABOUT SECTION */
 
+#about {
+    padding-top: 50px;
+}
+
 .about-section {
     display: flex;
     justify-content: center;
@@ -169,10 +173,12 @@ body {
     align-items: center;
     position: relative;
     border-radius: 25px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
 
-
+.about-image {
+    border-radius: 25px;
+}
 .about-heading {
     font-size: 60px;
     font-weight: 600;
@@ -198,6 +204,8 @@ body {
 .info-container {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 
 }
 
@@ -330,7 +338,8 @@ body {
     margin:auto;
     text-align: left;
     width: 800px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .FAQ-section h1{
     text-align: center;
@@ -397,6 +406,38 @@ body {
 }
 
 
+/* contact form */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #E5E7EB;
+    color: var(--text-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #C4C6CA;
+}
+
+.contact-form {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+
 /* footer */
 .footer {
     text-align: center;
@@ -409,3 +450,4 @@ body {
 .footer p{
     color: var(--navbar-text-color);
 }
+

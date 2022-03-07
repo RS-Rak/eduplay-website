@@ -25,7 +25,7 @@
             <li class = "link"><a href="#about">About</a></li>
             <li class = "link"><a href="#games">Games</a></li>
             <li class = "link"><a href="#faqs">FAQs</a></li>
-            <li class = "link"><a href="#">Contact</a></li>
+            <li class = "link"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -40,27 +40,28 @@
 
 
     <!-- ABOUT SECTION -->
-    <h1 class="about-heading" id="about">About</h1> 
+    <section id="about">
+    <h1 class="about-heading">About</h1> 
     <section class="about-section">
         <div class=about-cards>
                 <div class = "about-card">
-                    <img src="images/project-2.png" alt="">
+                    <img  class = "about-image" src="images/project-2.png" alt="">
                     <div class="info-container">
-                    <h2 class= "question">What is Eduplay?</h2>
-                    <p class="about-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 class= "question">Basic Info</h2>
+                    <p class="about-info">Welcome to Eduplay. This is an educational website, focused on teaching younger students English, Maths, and Science through the use of minigames. If you'd like to access these minigames, alongside descriptions of what they do, please navigate to the games page below. By hovering over each icon, you can see more info on that game, and decide whether or not you'd like to play it. If you have any further questions, there are some FAQs at the bottom of this page.</p>
                 </div>
                 </div>
 
                 <div class = "about-card">
-                    <img src="images/project-3.png" alt="">
+                    <img class = "about-image" src="images/project-3.png" alt="">
                     <div class="info-container">
-                    <h2 class= "question">How to get started?</h2>
-                    <p class="about-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h2 class= "question">Origins of Eduplay</h2>
+                    <p class="about-info">Eduplay was created for my Extended Project Qualifications. Inspired by other great educational websites, such as Mathletics or Sheppard Software. The end goal is for there to be 9 minigames created, 3 each for Maths, Science and English. New games may be added in the future, as I become more comfortable with both the Phaser game engine and JavaScript as a whole.</p>
                 </div>
                 </div>
         </div>
     </section>
-
+    </section>
     
 
 
@@ -207,16 +208,41 @@
             
             <!-- menu 4 -->
             <input type="radio" name="trg1" id="acc4">
-            <label for="acc4">Question 4</label>
+            <label for="acc4">My question isn't answered here?</label>
             <div class="content">
                 <div class="inner">
-                    It is a demo text.
+                    If your question isn't answered here, feel free to fill in the contact form below to let me know what your issue is. 
                 </div>
             </div>
 
         </div>
     </section>
 
+
+    <div class="contact-form" id="contact">
+        <h1 style ="text-align: center; font-size:3.125rem; font-weight: 600; margin-bottom:20px; padding-top:20px; padding-bottom:20px"> Contact</h1>
+        <hr>
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type = "text" id="fname" name="fname" placeholder="Your name...">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="johndoe@example.com">
+            
+            <label for="issues">What's your concern/feedback?</label>
+            <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type= "submit" value="Submit">
+
+        </form>
+    </div>
+
+
+
+    <!-- footer -->
     <footer class="footer">
         <p>Eduplay, created by Yusuf Hassan.</p>
     </footer>

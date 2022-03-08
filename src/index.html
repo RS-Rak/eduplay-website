@@ -63,6 +63,7 @@
     </section>
     </section>
     
+    <!-- TESTIMONIALS -->
 
 
     <!-- GAME SECTION -->
@@ -247,6 +248,35 @@
         <p>Eduplay, created by Yusuf Hassan.</p>
     </footer>
 
+
+
+
+
+
+    <!-- FIREBASE SCRIPT -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD4iJxHjHHm4bTmbbvHX-5bcrj0pwFyg00",
+          authDomain: "eduplay-f1d4b.firebaseapp.com",
+          projectId: "eduplay-f1d4b",
+          storageBucket: "eduplay-f1d4b.appspot.com",
+          messagingSenderId: "959726835353",
+          appId: "1:959726835353:web:70a67b7cdddadee1e54a08",
+          measurementId: "G-908022WSMW"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 
     <!--SCRIPT-->
     <script src="app.js"></script>

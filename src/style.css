@@ -451,3 +451,43 @@ input[type=submit]:hover {
     color: var(--navbar-text-color);
 }
 
+
+
+/* login form/signup form */
+.login-forms{
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.forms {
+    width: 93%;
+    margin: inherit;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.forms div{
+    padding: 30px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #168ab8;
+    border-radius: 10px;
+    margin-bottom: 15;
+}
+
+.forms h3{
+    text-align: center;
+}
+
+.forms input{
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.forms button {
+    border: none;
+    padding: 7px 20px
+}

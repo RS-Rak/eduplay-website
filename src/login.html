@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href = "images/eduplaylogo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Eduplay</title>
+</head>
+<body data-theme="light">
+     <!-- NAVBAR -->
+     <nav class = "navbar">
+        <div class="logo">
+            <img class= "nav-logo" src="images/eduplaylogo.png" alt="">
+            <h1 class="nav-name">EDUPLAY</h1>
+        </div>
+        <ul class = "link-group">
+            <li class = "link active"><a href="#home">Home</a></li>
+            <li class = "link"><a href="#about">About</a></li>
+            <li class = "link"><a href="#games">Games</a></li>
+            <li class = "link"><a href="#faqs">FAQs</a></li>
+            <li class = "link"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-forms">
+        <div class="forms">
+            <div id="registration-page" class="hide">
+                <button id="show-login">Sign In</button>
+                <h3>Sign Up</h3>
+                Email <br />
+                <input type="email" id="registration-email" /><br />
+                Confirm Email <br />
+                <input
+                type="email"
+                id="registration-reemail"
+                autocomplete="disable"
+                /><br />
+                Password <br />
+                <input type="password" id="registration-password" /><br />
+                <center><button id="register">Sign Up</button></center>
+            </div>
+
+            <div id="login-page">
+                <button id="show-register">Sign Up</button>
+                <h3>Sign In</h3>
+                Email <br />
+                <input type="email" id="login-email" /><br />
+                Password <br />
+                <input type="password" id="login-password" /><br />
+                <p id="forgot-password">Forgot Password</p>
+                <center><button id="login">Sign In</button></center>
+            </div>
+
+            <div id="homepage" class="hide">
+                <button id="signout">Sign Out</button>
+                <h3>Logged In</h3>
+
+            </div>
+        </div class="forms">
+    </div>
+
+
+</body>
+</html>
